@@ -54,7 +54,7 @@ export default function Login() {
             <div className="flex flex-col gap-3 w-96">
                 <h1 className="text-center font-medium text-xl">Авторизация</h1>
                 <input type="text" placeholder="Введите логин" className="rounded-xl bg-gray-200  p-2" value={login} onChange={(e) => setLogin(e.target.value)} />
-                <input type="text" placeholder="Введите пароль" className="rounded-xl bg-gray-200 p-2" value={password} onChange={(e) => setPassword(e.target.value)} />
+                <input type="password" placeholder="Введите пароль" className="rounded-xl bg-gray-200 p-2" value={password} onChange={(e) => setPassword(e.target.value)} />
                 <button onClick={logina} className="bg-gray-400 rounded-xl p-2 cursor-pointer mt-3">Войти</button>
                 <Link href='/register' className="bg-gray-400 rounded-xl p-2 cursor-pointer mt-3 text-center">Еще не зарегистрированы?</Link>
                 {error && <div className="bg-red-300 rounded-xl flex items-center justify-center p-2">{error}</div>}
